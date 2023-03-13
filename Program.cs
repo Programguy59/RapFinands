@@ -177,7 +177,7 @@ namespace Rap_Finands
         }
         public static void hent()
         {
-            datafil = "debug_bank.json"; //Debug - brug en anden datafil til debug ~Konrad
+            datafil = @"C:\Users\magnu\Documents\School\H1 Erv\Grndl program.2\RapFinands\debug_bank.json"; //Debug - brug en anden datafil til debug ~Konrad
             if (File.Exists(datafil)) {
                 string json = File.ReadAllText(datafil);
                 konti = JsonConvert.DeserializeObject<List<Konto>>(json);
